@@ -1,0 +1,65 @@
+
+.article-div {
+    border: 1px solid #9B4F96;
+    background-color: #9B4F96
+    ;
+    padding: 2%;
+    margin-bottom: 5px;
+}
+
+.save, .unsave, .notes {
+    float: right;
+}
+
+.notes {
+    margin-right: 5px;
+}
+
+a {
+    color:white;
+    font-size: 20px;
+}
+
+.jumbotron {
+    background-image: url("https://skb-law.com/wp-content/uploads/2017/09/newspapers_xl_28444782.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: .7;
+    margin-bottom: 0px;
+
+}
+
+.jumbo-title {
+    border: 0px solid rgba(238,241,234, .5);
+    background-color: rgba(238,241,234, .5);
+    color: black;
+    text-align: center;
+    width: 40%;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 10px;
+    
+}
+
+.article-row, body {
+    
+    background-color: #C6C6C6;
+}
+
+.articles, .saved-articles {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#scrape {
+    margin-right: 10px;
+    background-color: #9B4F96;
+    color: white;
+}
+
+.current-notes {
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+  

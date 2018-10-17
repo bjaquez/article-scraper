@@ -22,9 +22,9 @@ $("#clear").on("click", function(){
 $.get("/articles", function(data){
     data.forEach(element => {
         $(".articles").append(`
-        <div><a href = "${element.link}"> ${element.title}</a> 
+        <div class = "article-div"><a href = "${element.link}"> ${element.title}</a> 
         
-        <button class = "save" data-id = "${element._id}"> Save Article </button>
+        <button class = "btn btn-light save" data-id = "${element._id}"> Save Article </button>
         </div>
         
         `)    
@@ -36,10 +36,10 @@ $.get("/articles", function(data){
 $.get("/articles/saved", function(data){
     data.forEach(element => {
         $(".saved-articles").append(`
-        <div><a href = "${element.link}"> ${element.title}</a> 
+        <div class = "article-div"><a href = "${element.link}"> ${element.title}</a> 
         
-        <button class = "unsave" data-id = "${element._id}"> Remove From Saved </button>
-        <button class = "notes" data-id = "${element._id}" data-toggle="modal" data-target="#notesModal"> Notes </button>
+        <button class = "btn btn-light unsave" data-id = "${element._id}"> Remove From Saved </button>
+        <button class = "btn btn-light notes" data-id = "${element._id}" data-toggle="modal" data-target="#notesModal"> Notes </button>
         </div>
         
         `)    
@@ -77,7 +77,7 @@ $(document).on("click", ".notes", function(){
         $(".current-notes").empty();
         data.notes.forEach(element =>{
             $(".current-notes").append(`
-            <div>${element.body} <button data-id ="${element._id}" class = "del-note" data-dismiss="modal">x</button></div>
+            <div>${element.body} <button data-id ="${element._id}" class = "del-note btn btn-sm btn-danger" data-dismiss="modal">x</button></div>
             
             `)    
         });
